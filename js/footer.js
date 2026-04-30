@@ -25,28 +25,28 @@ class SiteFooter extends HTMLElement {
             <div class="footer-col">
               <h4>Tools</h4>
               <ul>
-                <li><a href="#generator">Mailto Link Generator</a></li>
-                <li><a href="#generator">HTML Email Link Builder</a></li>
-                <li><a href="#generator">Clickable Email Link</a></li>
-                <li><a href="#generator">Email Hyperlink Creator</a></li>
+                <li><a href="/#generator">Mailto Link Generator</a></li>
+                <li><a href="/#generator">HTML Email Link Builder</a></li>
+                <li><a href="/#generator">Clickable Email Link</a></li>
+                <li><a href="/#generator">Email Hyperlink Creator</a></li>
               </ul>
             </div>
             <div class="footer-col">
               <h4>Learn</h4>
               <ul>
-                <li><a href="#guide">Mailto HTML Guide</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#examples">Code Examples</a></li>
+                <li><a href="/#guide">Mailto HTML Guide</a></li>
+                <li><a href="/#how-it-works">How It Works</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+                <li><a href="/#examples">Code Examples</a></li>
               </ul>
             </div>
             <div class="footer-col">
-              <h4>About</h4>
-              <ul>
-                <li><a href="https://emaillink.github.io" rel="noopener">EmailLink.github.io</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#use-cases">Use Cases</a></li>
-                <li><a href="#faq">Help Center</a></li>
+              <h4>Pages</h4>
+              <ul>                
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="privacy">Privacy Policy</a></li>
+                <li><a href="terms">Terms of Use</a></li>
               </ul>
             </div>
           </div>
