@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mailto Link Generator — Free HTML Email Link Builder | EmailLink</title>
+  <meta name="description" content="Generate perfect mailto links and HTML email hyperlinks instantly. Free online mailto link generator — add subject, CC, BCC, body. Copy HTML code in one click. No sign-up needed.">
+  <meta name="keywords" content="mailto link, mailto html, mailto link generator, html mailto link, email link html, html email link, email hyperlink html, mailto hyperlink, create mailto link, clickable email link html, email link generator">
+  <meta name="author" content="EmailLink Generator">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://emaillink.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://emaillink.github.io/">
+  <meta property="og:title" content="Mailto Link Generator — Free HTML Email Link Builder">
+  <meta property="og:description" content="Generate perfect mailto links and HTML email hyperlinks instantly. Free, no sign-up. Copy your code in one click.">
+  <meta property="og:image" content="https://emaillink.github.io/assets/og-image.png">
+  <meta property="og:site_name" content="EmailLink Generator">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mailto Link Generator — Free HTML Email Link Builder">
+  <meta name="twitter:description" content="Create mailto links with subject, CC, BCC &amp; body. Free HTML email link generator — no login required.">
+  <meta name="twitter:image" content="https://emaillink.github.io/assets/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✉</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "EmailLink — Mailto Link Generator",
+    "url": "https://emaillink.github.io",
+    "description": "Free online tool to generate mailto links and HTML email hyperlinks. Supports subject, CC, BCC, and body pre-population.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Mailto link generator",
+      "HTML mailto code builder",
+      "Email link with subject line",
+      "CC and BCC support",
+      "Button-style email link",
+      "One-click copy to clipboard"
+    ],
+    "screenshot": "https://emaillink.github.io/assets/screenshot.png",
+    "creator": {
+      "@type": "Organization",
+      "name": "EmailLink",
+      "url": "https://emaillink.github.io"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a mailto link?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A mailto link is an HTML hyperlink that, when clicked, opens the visitor's default email client with the To address pre-filled. It uses the mailto: URI scheme. You can also pre-populate the subject, CC, BCC, and body fields."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I create a mailto link in HTML?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The basic syntax is: <a href=\"mailto:you@example.com\">Email Us</a>. To add a subject, use: <a href=\"mailto:you@example.com?subject=Hello\">Email Us</a>. Use our generator above to create advanced mailto links instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I add CC and BCC to a mailto link?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Add cc= and bcc= parameters to your mailto URL: mailto:primary@example.com?cc=cc@example.com&bcc=bcc@example.com&subject=Hello. Our tool generates this automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this mailto link generator free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, EmailLink Generator is completely free. No account needed, no watermarks, no limits. Generate as many mailto links as you want."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do mailto links work on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Mailto links work on mobile devices — tapping a mailto link opens the device's default email app (Gmail, Apple Mail, Outlook Mobile, etc.) with the fields pre-filled."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Create a Mailto Link in HTML",
+    "description": "Step-by-step guide to creating a mailto hyperlink in HTML with subject, CC, BCC, and body.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Enter your email address",
+        "text": "Type your email address into the To field in the mailto link generator."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Add optional fields",
+        "text": "Optionally fill in Subject, CC, BCC, and a default body message."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Choose link style",
+        "text": "Select a plain text link or a styled button link."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Copy the HTML code",
+        "text": "Click Copy next to the generated HTML code and paste it into your website."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ── Header Component ──────────────────────────────────────────── -->
+  <site-header></site-header>
+
+  <main id="main-content">
+
+    <!-- ── 1. HERO ──────────────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-text fade-in">
+            <div class="hero-badge">
+              <span>✉</span> Free Mailto Link Generator
+            </div>
+            <h1 id="hero-heading">Create <em>perfect</em> email links for any website</h1>
+            <p class="hero-sub">Generate HTML mailto links with subject, CC, BCC &amp; body in seconds. Copy the code and paste it anywhere — no coding knowledge needed.</p>
+            <div class="hero-actions">
+              <a href="#generator" class="btn-primary">
+                ✉ &nbsp;Generate My Link
+              </a>
+              <a href="#guide" class="btn-ghost">
+                📖 &nbsp;Read the Guide
+              </a>
+            </div>
+            <div class="hero-trust">
+              <span class="trust-item"><span class="icon">✓</span> Completely Free</span>
+              <span class="trust-item"><span class="icon">✓</span> No Sign-up Required</span>
+              <span class="trust-item"><span class="icon">✓</span> Instant HTML Output</span>
+              <span class="trust-item"><span class="icon">✓</span> Works Everywhere</span>
+            </div>
+          </div>
+
+          <div class="hero-visual fade-in" style="transition-delay:.2s">
+            <div class="hero-card">
+              <div class="hero-card-label">Generated HTML Code</div>
+              <div class="hero-card-code">
+                <span class="tag">&lt;a</span>
+                <span class="attr"> href</span>=<span class="val">"mailto:hello@example.com<br>&nbsp;&nbsp;?subject=Hello%20There<br>&nbsp;&nbsp;&amp;body=Hi%2C%20I%27d%20love%20to%20chat!"</span>
+                <span class="tag">&gt;</span><br>
+                &nbsp;&nbsp;Send us an email<br>
+                <span class="tag">&lt;/a&gt;</span>
+              </div>
+              <div class="hero-preview-label">Live Preview:</div>
+              <a href="mailto:hello@example.com?subject=Hello%20There&body=Hi%2C%20I%27d%20love%20to%20chat!" class="hero-preview-link">
+                ✉ &nbsp;Send us an email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2. STATS ──────────────────────────────────────────────────── -->
+    <section class="stats-section" aria-label="Tool statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stagger-child">
+            <div class="stat-num" data-counter="250000" data-suffix="+">0+</div>
+            <div class="stat-label">Links Generated</div>
+          </div>
+          <div class="stagger-child">
+            <div class="stat-num" data-counter="100" data-suffix="%">0%</div>
+            <div class="stat-label">Free Forever</div>
+          </div>
+          <div class="stagger-child">
+            <div class="stat-num" data-counter="5" data-suffix=" sec">0 sec</div>
+            <div class="stat-label">Avg. Time to Build</div>
+          </div>
+          <div class="stagger-child">
+            <div class="stat-num" data-counter="0" data-suffix=" sign-ups">0 sign-ups</div>
+            <div class="stat-label">Required</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 3. GENERATOR ──────────────────────────────────────────────── -->
+    <section class="section" id="generator" aria-labelledby="gen-heading">
+      <div class="container">
+        <div class="section-header slide-up" style="text-align:center;margin-bottom:48px">
+          <span class="display-tag">Free Tool</span>
+          <h2 id="gen-heading">Mailto Link Generator</h2>
+          <p style="max-width:560px;margin:12px auto 0">Fill in the fields below and get your HTML mailto link instantly. Click any Copy button to grab the code.</p>
+        </div>
+
+        <div class="generator-layout">
+
+          <!-- Form -->
+          <div class="gen-form-card fade-in">
+            <div class="form-group">
+              <label class="form-label" for="inp-to">
+                To Address <span class="req">*</span>
+                <span class="tip">recipient email</span>
+              </label>
+              <input type="email" id="inp-to" class="form-input" placeholder="hello@example.com" autocomplete="off">
+              <span id="valid-badge" class="valid-badge"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="inp-subject">Subject Line</label>
+              <input type="text" id="inp-subject" class="form-input" placeholder="e.g. Enquiry from your website">
+            </div>
+
+            <button class="advanced-toggle-btn" id="advanced-toggle" aria-expanded="false">
+              + Show advanced options (CC, BCC, Body)
+            </button>
+
+            <div class="advanced-panel" id="advanced-panel">
+              <div class="form-group">
+                <label class="form-label" for="inp-cc">CC</label>
+                <input type="email" id="inp-cc" class="form-input" placeholder="cc@example.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inp-bcc">BCC</label>
+                <input type="email" id="inp-bcc" class="form-input" placeholder="bcc@example.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inp-body">Default Body</label>
+                <textarea id="inp-body" class="form-input" placeholder="Hi, I'd love to chat about..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="inp-text">Link / Button Text</label>
+              <input type="text" id="inp-text" class="form-input" value="Send us an email">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Link Style</label>
+              <div class="style-group">
+                <label class="style-radio">
+                  <input type="radio" name="link-style" value="text" checked> Plain text link
+                </label>
+                <label class="style-radio">
+                  <input type="radio" name="link-style" value="button"> Styled button
+                </label>
+              </div>
+              <div class="btn-options-grid" id="btn-options">
+                <div class="form-group">
+                  <label class="form-label" for="inp-btnbg">Background</label>
+                  <div class="color-input-group">
+                    <input type="color" id="inp-btnbg" value="#e8612c">
+                    <input type="text" class="form-input" value="#e8612c" style="flex:1" oninput="document.getElementById('inp-btnbg').value=this.value;state.btnBg=this.value;updateOutputs()">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="inp-btntxt">Text Color</label>
+                  <div class="color-input-group">
+                    <input type="color" id="inp-btntxt" value="#ffffff">
+                    <input type="text" class="form-input" value="#ffffff" style="flex:1" oninput="document.getElementById('inp-btntxt').value=this.value;state.btnTxt=this.value;updateOutputs()">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-generate" onclick="updateOutputs()">Generate Mailto Link ✉</button>
+              <button class="btn-clear-form" id="btn-clear">Clear</button>
+            </div>
+          </div>
+
+          <!-- Output -->
+          <div class="gen-output-card fade-in" style="transition-delay:.15s">
+            <div class="output-card">
+              <div class="output-card-title">📋 Your Generated Code</div>
+
+              <div class="output-tabs">
+                <button class="tab-btn active" data-group="out" data-target="tab-html">HTML Code</button>
+                <button class="tab-btn" data-group="out" data-target="tab-href">Href Only</button>
+                <button class="tab-btn" data-group="out" data-target="tab-plain">Raw URL</button>
+              </div>
+
+              <div id="tab-html" class="tab-panel active">
+                <div class="output-block" id="out-html" aria-label="HTML output">
+                  <a href="mailto:">Email Us</a>
+                </div>
+                <button class="copy-btn" data-copy="out-html">Copy HTML</button>
+                <div class="char-count" id="char-count">— chars</div>
+              </div>
+
+              <div id="tab-href" class="tab-panel">
+                <div class="output-block" id="out-href" aria-label="Href value output">mailto:</div>
+                <button class="copy-btn" data-copy="out-href">Copy Href</button>
+              </div>
+
+              <div id="tab-plain" class="tab-panel">
+                <div class="output-block" id="out-plain" aria-label="Raw URL output">mailto:</div>
+                <button class="copy-btn" data-copy="out-plain">Copy URL</button>
+              </div>
+
+              <div class="preview-area">
+                <div class="preview-label">Live Preview</div>
+                <div id="link-preview"><a href="mailto:">Email Us</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4. HOW IT WORKS ──────────────────────────────────────────── -->
+    <section class="section" id="how-it-works" aria-labelledby="hiw-heading">
+      <div class="container">
+        <div class="section-header slide-up" style="text-align:center">
+          <span class="display-tag">Simple Process</span>
+          <h2 id="hiw-heading">How to Create a Mailto Link</h2>
+          <p style="max-width:520px;margin:12px auto 0">From filling in the form to pasting the code on your website — done in under 30 seconds.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card stagger-child" data-step="01">
+            <div class="step-icon">📧</div>
+            <h3>Enter your email address</h3>
+            <p>Type the recipient's email in the "To" field. This is the address that email clients will send to when the mailto link is clicked.</p>
+          </div>
+          <div class="step-card stagger-child" data-step="02">
+            <div class="step-icon">⚙️</div>
+            <h3>Configure subject, CC &amp; body</h3>
+            <p>Optionally pre-fill a subject line, add CC or BCC recipients, and set a default message body. All fields are URL-encoded automatically.</p>
+          </div>
+          <div class="step-card stagger-child" data-step="03">
+            <div class="step-icon">📋</div>
+            <h3>Copy &amp; paste your HTML</h3>
+            <p>Click "Copy HTML" and paste the generated <code style="font-family:monospace;background:var(--surface-3);padding:2px 6px;border-radius:4px">&lt;a&gt;</code> tag anywhere on your website, email template, or landing page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5. FEATURES ──────────────────────────────────────────────── -->
+    <section class="section" id="features" aria-labelledby="feat-heading">
+      <div class="container">
+        <div class="section-header slide-up" style="text-align:center">
+          <span class="display-tag">Why EmailLink</span>
+          <h2 id="feat-heading">Everything you need in a mailto link generator</h2>
+          <p style="max-width:520px;margin:12px auto 0">Built for developers, designers, and marketers who want clickable email links without the fuss.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant Generation</h3>
+            <p>Your mailto HTML code updates live as you type — no button clicks needed to see changes.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">🔗</div>
+            <h3>Full mailto: Support</h3>
+            <p>Supports the complete mailto URI scheme: To, Subject, CC, BCC, and body — all RFC 6068 compliant.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">🎨</div>
+            <h3>Styled Button Links</h3>
+            <p>Generate a plain hyperlink or a fully styled email button with your own background and text colors.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">📱</div>
+            <h3>Mobile Compatible</h3>
+            <p>Generated links open native email apps on iOS and Android — Gmail, Apple Mail, Outlook, and more.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">✅</div>
+            <h3>Email Validation</h3>
+            <p>Instantly validates your email address format as you type so you never generate broken mailto links.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">🔒</div>
+            <h3>100% Private</h3>
+            <p>Everything runs in your browser. No data is sent to any server. Your email addresses stay completely private.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">📐</div>
+            <h3>Three Output Formats</h3>
+            <p>Get full HTML code, href value only, or raw mailto URL — whatever your workflow needs.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">🌐</div>
+            <h3>URL Encoding Built-in</h3>
+            <p>All special characters in your subject and body are automatically percent-encoded for maximum browser compatibility.</p>
+          </div>
+          <div class="feature-card stagger-child">
+            <div class="feature-icon">💸</div>
+            <h3>Completely Free</h3>
+            <p>No subscription, no trial, no credit card. EmailLink Generator is free forever, for everyone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 6. CODE GUIDE ──────────────────────────────────────────── -->
+    <section class="section" id="guide" aria-labelledby="guide-heading">
+      <div class="container">
+        <div class="section-header slide-up" style="text-align:center;margin-bottom:12px">
+          <span class="display-tag">Developer Guide</span>
+          <h2 id="guide-heading">The complete mailto HTML guide</h2>
+        </div>
+
+        <div class="guide-grid">
+          <div class="guide-content fade-in">
+            <h3>What is a mailto link?</h3>
+            <p>A <strong>mailto link</strong> is an HTML hyperlink that, when clicked, launches the visitor's default email client (Gmail, Apple Mail, Outlook, Thunderbird, etc.) and pre-fills the To field with the specified address. It uses the <code style="font-family:monospace;background:var(--surface-3);padding:2px 6px;border-radius:4px">mailto:</code> URI scheme defined in RFC 6068.</p>
+
+            <h3>Basic mailto HTML syntax</h3>
+            <p>The simplest email hyperlink in HTML requires only a To address inside the <code style="font-family:monospace;background:var(--surface-3);padding:2px 6px;border-radius:4px">href</code> attribute:</p>
+            <p><code style="font-family:monospace;background:var(--surface-3);padding:4px 10px;border-radius:6px;display:inline-block;margin:.4rem 0">&lt;a href="mailto:you@example.com"&gt;Email us&lt;/a&gt;</code></p>
+
+            <h3>Adding a subject, CC, BCC &amp; body</h3>
+            <p>You can pre-populate additional fields by appending URL query parameters to the mailto address. Multiple parameters are separated with <code style="font-family:monospace;background:var(--surface-3);padding:2px 6px;border-radius:4px">&amp;</code>:</p>
+            <ul>
+              <li><strong>subject</strong> — sets the email subject line</li>
+              <li><strong>cc</strong> — adds a CC recipient</li>
+              <li><strong>bcc</strong> — adds a BCC (blind carbon copy) recipient</li>
+              <li><strong>body</strong> — pre-fills the message body</li>
+            </ul>
+            <p>All values must be <strong>URL-encoded</strong> (spaces become <code style="font-family:monospace;background:var(--surface-3);padding:2px 6px;border-radius:4px">%20</code>, etc.). Our generator handles this automatically.</p>
+
+            <h3>Creating a clickable email link in HTML</h3>
+            <p>To make a <strong>clickable email link</strong> that looks like a button, wrap the anchor tag in inline styles or a CSS class. You can use our generator's "Styled button" option to output fully styled HTML instantly.</p>
+
+            <h3>Mailto HTML best practices</h3>
+            <ul>
+              <li>Always URL-encode special characters in subject and body</li>
+              <li>Keep body text short — long bodies may be truncated by email clients</li>
+              <li>Test your mailto link on both desktop and mobile browsers</li>
+              <li>Consider adding <code style="font-family:monospace;background:var(--surface-3);padding:2px 6px;border-radius:4px">rel="noopener"</code> on external links</li>
+              <li>Supplement mailto links with a contact form for users without email clients configured</li>
+            </ul>
+          </div>
+
+          <div class="code-showcase fade-in" style="transition-delay:.15s">
+            <div class="code-topbar">
+              <div class="code-dots">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+              <span class="code-filename">email-link-examples.html</span>
+            </div>
+            <div class="code-body">
+              <span class="c-cmt">&lt;!-- Basic mailto link --&gt;</span><br>
+              <span class="c-tag">&lt;a</span> <span class="c-attr">href</span>=<span class="c-val">"mailto:you@site.com"</span><span class="c-tag">&gt;</span><br>
+              &nbsp;&nbsp;Email Us<br>
+              <span class="c-tag">&lt;/a&gt;</span><br><br>
+
+              <span class="c-cmt">&lt;!-- With subject line --&gt;</span><br>
+              <span class="c-tag">&lt;a</span> <span class="c-attr">href</span>=<span class="c-val">"mailto:you@site.com<br>&nbsp;&nbsp;?subject=Website%20Enquiry"</span><span class="c-tag">&gt;</span><br>
+              &nbsp;&nbsp;Send Enquiry<br>
+              <span class="c-tag">&lt;/a&gt;</span><br><br>
+
+              <span class="c-cmt">&lt;!-- Full example: subject, CC, body --&gt;</span><br>
+              <span class="c-tag">&lt;a</span> <span class="c-attr">href</span>=<span class="c-val">"mailto:hello@site.com<br>&nbsp;&nbsp;?cc=team@site.com<br>&nbsp;&nbsp;&amp;subject=Hello%20There<br>&nbsp;&nbsp;&amp;body=Hi%2C%20I%27d%20like%20to..."</span><span class="c-tag">&gt;</span><br>
+              &nbsp;&nbsp;Contact the Team<br>
+              <span class="c-tag">&lt;/a&gt;</span><br><br>
+
+              <span class="c-cmt">&lt;!-- Styled button mailto link --&gt;</span><br>
+              <span class="c-tag">&lt;a</span> <span class="c-attr">href</span>=<span class="c-val">"mailto:you@site.com"</span><br>
+              &nbsp;&nbsp;&nbsp;<span class="c-attr">style</span>=<span class="c-val">"display:inline-block;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding:12px 24px;<br>&nbsp;&nbsp;&nbsp;&nbsp;background:#e8612c;<br>&nbsp;&nbsp;&nbsp;&nbsp;color:#fff;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius:6px;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration:none;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-weight:600;"</span><span class="c-tag">&gt;</span><br>
+              &nbsp;&nbsp;✉ Email Us<br>
+              <span class="c-tag">&lt;/a&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 7. EXAMPLES ──────────────────────────────────────────────── -->
+    <section class="section" id="examples" aria-labelledby="ex-heading">
+      <div class="container">
+        <div class="section-header slide-up" style="text-align:center">
+          <span class="display-tag">Code Examples</span>
+          <h2 id="ex-heading">Ready-to-use mailto HTML examples</h2>
+          <p style="max-width:520px;margin:12px auto 0">Copy and customise these common mailto link patterns for your own website.</p>
+        </div>
+        <div class="examples-grid">
+          <div class="example-card stagger-child">
+            <div class="example-header">
+              <span class="example-title">Simple Email Link</span>
+              <span class="example-tag">Basic</span>
+            </div>
+            <div class="example-code">&lt;a href="mailto:hello@example.com"&gt;<br>&nbsp;&nbsp;Contact Us<br>&lt;/a&gt;</div>
+            <div class="example-preview">Preview: <a href="mailto:hello@example.com">Contact Us</a></div>
+          </div>
+
+          <div class="example-card stagger-child">
+            <div class="example-header">
+              <span class="example-title">With Subject Line</span>
+              <span class="example-tag">Common</span>
+            </div>
+            <div class="example-code">&lt;a href="mailto:hello@example.com<br>&nbsp;&nbsp;?subject=Website%20Enquiry"&gt;<br>&nbsp;&nbsp;Send Enquiry<br>&lt;/a&gt;</div>
+            <div class="example-preview">Preview: <a href="mailto:hello@example.com?subject=Website%20Enquiry">Send Enquiry</a></div>
+          </div>
+
+          <div class="example-card stagger-child">
+            <div class="example-header">
+              <span class="example-title">Subject &amp; Body</span>
+              <span class="example-tag">Pre-filled</span>
+            </div>
+            <div class="example-code">&lt;a href="mailto:hello@example.com<br>&nbsp;&nbsp;?subject=Hello%20There<br>&nbsp;&nbsp;&amp;body=Hi%2C%20I%27d%20like%20to%20know..."&gt;<br>&nbsp;&nbsp;Get in Touch<br>&lt;/a&gt;</div>
+            <div class="example-preview">Preview: <a href="mailto:hello@example.com?subject=Hello%20There&body=Hi%2C%20I%27d%20like%20to%20know...">Get in Touch</a></div>
+          </div>
+
+          <div class="example-card stagger-child">
+            <div class="example-header">
+              <span class="example-title">Mailto Button Style</span>
+              <span class="example-tag">Styled</span>
+            </div>
+            <div class="example-code">&lt;a href="mailto:hello@example.com"<br>&nbsp;style="display:inline-block;<br>&nbsp;&nbsp;padding:12px 24px;background:#e8612c;<br>&nbsp;&nbsp;color:#fff;border-radius:6px;<br>&nbsp;&nbsp;text-decoration:none;font-weight:600;"&gt;<br>&nbsp;&nbsp;✉ Email Us<br>&lt;/a&gt;</div>
+            <div class="example-preview">Preview: <a href="mailto:hello@example.com" style="display:inline-block;padding:8px 18px;background:#e8612c;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:.88rem">✉ Email Us</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 8. USE CASES ──────────────────────────────────────────────── -->
+    <section class="section" id="use-cases" aria-labelledby="uc-heading">
+      <div class="container">
+        <div class="section-header slide-up" style="text-align:center">
+          <span class="display-tag">Who Uses It</span>
+          <h2 id="uc-heading">Perfect for every kind of website</h2>
+          <p style="max-width:520px;margin:12px auto 0">Mailto links and HTML email hyperlinks are useful across industries and project types.</p>
+        </div>
+        <div class="use-cases-grid">
+          <div class="use-case-card stagger-child">
+            <div class="use-case-icon">🏢</div>
+            <h3>Business Websites</h3>
+            <p>Add a "Contact Us" mailto hyperlink to your corporate site so visitors can reach your team with one click.</p>
+            <div class="use-tags">
+              <span class="use-tag">Contact pages</span>
+              <span class="use-tag">Footer links</span>
+            </div>
+          </div>
+          <div class="use-case-card stagger-child">
+            <div class="use-case-icon">🛍️</div>
+            <h3>E-commerce Stores</h3>
+            <p>Create a customer support mailto link with a pre-filled subject like "Order Inquiry" to speed up support workflows.</p>
+            <div class="use-tags">
+              <span class="use-tag">Support links</span>
+              <span class="use-tag">Order queries</span>
+            </div>
+          </div>
+          <div class="use-case-card stagger-child">
+            <div class="use-case-icon">🎨</div>
+            <h3>Portfolio Sites</h3>
+            <p>Let clients reach you directly with a styled email link button that matches your personal brand colours.</p>
+            <div class="use-tags">
+              <span class="use-tag">Hire me links</span>
+              <span class="use-tag">Project inquiries</span>
+            </div>
+          </div>
+          <div class="use-case-card stagger-child">
+            <div class="use-case-icon">📰</div>
+            <h3>Blogs &amp; Media</h3>
+            <p>Add a press or editorial contact mailto link to your about page with a pre-set subject for media inquiries.</p>
+            <div class="use-tags">
+              <span class="use-tag">Press contacts</span>
+              <span class="use-tag">Guest posts</span>
+            </div>
+          </div>
+          <div class="use-case-card stagger-child">
+            <div class="use-case-icon">💻</div>
+            <h3>Developers &amp; Agencies</h3>
+            <p>Generate mailto HTML code for client projects quickly. Test different configurations without writing code by hand.</p>
+            <div class="use-tags">
+              <span class="use-tag">Client sites</span>
+              <span class="use-tag">Prototyping</span>
+            </div>
+          </div>
+          <div class="use-case-card stagger-child">
+            <div class="use-case-icon">📧</div>
+            <h3>Email Campaigns</h3>
+            <p>Include a clickable reply link inside HTML email newsletters that opens a new draft in recipients' mail apps.</p>
+            <div class="use-tags">
+              <span class="use-tag">Newsletters</span>
+              <span class="use-tag">Reply links</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 9. FAQ ─────────────────────────────────────────────────────── -->
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header slide-up" style="text-align:center">
+          <span class="display-tag">FAQ</span>
+          <h2 id="faq-heading">Frequently asked questions</h2>
+          <p style="max-width:500px;margin:12px auto 0">Everything you need to know about mailto links, HTML email hyperlinks, and this generator.</p>
+        </div>
+        <div class="faq-grid">
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              What is a mailto link?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              A <strong>mailto link</strong> is an HTML hyperlink using the <code>mailto:</code> URI scheme. When clicked, it opens the user's default email application with the specified To address pre-filled. You can also pre-populate the subject, CC, BCC, and message body fields.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              How do I write a mailto link in HTML?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              The basic HTML email link syntax is: <code>&lt;a href="mailto:you@example.com"&gt;Email Us&lt;/a&gt;</code>. To add a subject: <code>mailto:you@example.com?subject=Hello</code>. Use our <a href="#generator">free mailto link generator</a> above to build complex links with all fields instantly.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can I add CC and BCC to a mailto link?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Yes. Add <code>cc=</code> and <code>bcc=</code> query parameters: <code>mailto:to@example.com?cc=cc@example.com&amp;bcc=bcc@example.com</code>. Our generator handles these fields in the "advanced options" section and URL-encodes everything automatically.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Do I need to URL-encode the subject and body?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Yes. Spaces, commas, apostrophes, and other special characters must be percent-encoded in the mailto URL (e.g. space → <code>%20</code>, <code>@</code> → <code>%40</code>). This generator encodes everything for you automatically using JavaScript's <code>encodeURIComponent()</code>.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Do mailto links work on mobile devices?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Yes. On iOS, tapping a mailto link opens Apple Mail or whichever app is set as the default. On Android, it opens Gmail or the configured mail app. All major mobile browsers support the mailto: scheme.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Is this mailto link generator free to use?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Yes — completely free, no account required, no limits, no watermarks. EmailLink Generator runs entirely in your browser, so your email addresses are never sent to any server.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              What's the difference between a mailto link and a contact form?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              A <strong>mailto hyperlink</strong> relies on the visitor having an email client configured on their device — it's simpler to implement and requires no server-side code. A contact form collects data through your website and works even without an email client, but requires a backend or third-party service to process submissions.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can I create a mailto link that opens as a button?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Yes. Our generator's "Styled button" option outputs an <code>&lt;a&gt;</code> tag with inline CSS that looks like a clickable button. You can customise the background and text colour. You can also apply your own CSS class to the anchor tag for more styling control.
+            </div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ────────────────────────────────────────────────────────── -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container" style="position:relative;z-index:1">
+        <h2 id="cta-heading" class="slide-up">Ready to create your mailto link?</h2>
+        <p class="slide-up">Jump back to the generator — it takes less than 30 seconds.</p>
+        <a href="#generator" class="btn-white slide-up">✉ &nbsp;Generate My Mailto Link Free</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer Component ──────────────────────────────────────────── -->
+  <site-footer></site-footer>
+
+  <!-- Scripts -->
+  <script src="js/header.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>
