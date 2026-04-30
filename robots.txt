@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://emaillink.github.io/sitemap.xml
