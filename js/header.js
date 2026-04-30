@@ -8,12 +8,12 @@ class SiteHeader extends HTMLElement {
             <span class="logo-text">Email<strong>Link</strong></span>
           </a>
           <ul class="nav-links" id="nav-links">
-            <li><a href="#generator" class="nav-link">Generator</a></li>
-            <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-            <li><a href="#features" class="nav-link">Features</a></li>
-            <li><a href="#guide" class="nav-link">Guide</a></li>
-            <li><a href="#faq" class="nav-link">FAQ</a></li>
-            <li><a href="#generator" class="nav-cta">Create Link Free</a></li>
+            <li><a href="/#generator" class="nav-link">Generator</a></li>
+            <li><a href="/#how-it-works" class="nav-link">How It Works</a></li>
+            <li><a href="/#features" class="nav-link">Features</a></li>
+            <li><a href="/#guide" class="nav-link">Guide</a></li>
+            <li><a href="/#faq" class="nav-link">FAQ</a></li>
+            <li><a href="/#generator" class="nav-cta">Create Link Free</a></li>
           </ul>
           <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
             <span></span><span></span><span></span>
